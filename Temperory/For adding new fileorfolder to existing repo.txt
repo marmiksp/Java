@@ -1,0 +1,23 @@
+For adding new file/folder to existing repo.
+MSP@user-HP MINGW64 /c/7.JAVA CODES (master)
+$ git add *
+
+MSP@user-HP MINGW64 /c/7.JAVA CODES (master)
+$ git commit -m "Tp"
+[master 4f3ddd3] Tp
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Temperory/Hey.txt
+
+
+MSP@user-HP MINGW64 /c/7.JAVA CODES (master)
+$ git push -u origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 399 bytes | 133.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/marmiksp/Java.git
+   05e1970..4f3ddd3  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+

@@ -1,0 +1,49 @@
+For New Repository:
+Steps to be followed as :
+
+
+MSP@user-HP MINGW64 /c/7.JAVA CODES/File system (master)
+$ git add *
+
+MSP@user-HP MINGW64 /c/7.JAVA CODES/File system (master)
+$ git commit -m "File System"
+[master (root-commit) 05e1970] File System
+ 21 files changed, 187 insertions(+)
+ create mode 100644 File system/fobj.txt
+ create mode 100644 File system/obtr1.class
+ create mode 100644 File system/obtr1.java
+ create mode 100644 File system/obtr2.class
+ create mode 100644 File system/obtr2.java
+ create mode 100644 File system/testout.txt
+ create mode 100644 File system/tr1.class
+ create mode 100644 File system/tr1.java
+ create mode 100644 File system/tr2.class
+ create mode 100644 File system/tr2.java
+ create mode 100644 myPackage/Simple.java
+ create mode 100644 myPackage/Simple1.java
+ create mode 100644 myPackage/myPackage/Simple.class
+ create mode 100644 myPackage/myPackage/Simple1.class
+ create mode 100644 myThread/Multi.java
+ create mode 100644 myThread/Multi3.java
+ create mode 100644 myThread/TestSleepMethod1.class
+ create mode 100644 myThread/TestSleepMethod1.java
+ create mode 100644 myThread/myThread/Multi.class
+ create mode 100644 myThread/myThread/Multi3.class
+ create mode 100644 myThread/myThread/TestSleepMethod1.class
+
+MSP@user-HP MINGW64 /c/7.JAVA CODES/File system (master)
+$ git remote add origin https://github.com/marmiksp/Java.git
+
+MSP@user-HP MINGW64 /c/7.JAVA CODES/File system (master)
+$ git push -u origin master
+Enumerating objects: 28, done.
+Counting objects: 100% (28/28), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (27/27), done.
+Writing objects: 100% (28/28), 8.77 KiB | 748.00 KiB/s, done.
+Total 28 (delta 6), reused 0 (delta 0)
+remote: Resolving deltas: 100% (6/6), done.
+To https://github.com/marmiksp/Java.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
