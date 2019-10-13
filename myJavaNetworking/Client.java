@@ -6,7 +6,7 @@ public class Client
 {
     public static void main(String args[]) throws Exception
     {
-        Scanner cin = new Scanner(System.in);
+        Scanner cin = new Scanner(System.in); // H
         Socket s = new Socket("localhost", 5111);
         //PrintWriter pr = new PrintWriter(s.getOutputStream());
         DataOutputStream dos = new DataOutputStream(s.getOutputStream());
