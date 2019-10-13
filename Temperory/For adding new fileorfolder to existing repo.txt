@@ -1,4 +1,6 @@
-For adding new file/folder to existing repo.
+#####    For adding new file/folder to existing repo.
+
+*****************************************************
 MSP@user-HP MINGW64 /c/7.JAVA CODES (master)
 $ git add *
 
@@ -21,3 +23,64 @@ To https://github.com/marmiksp/Java.git
    05e1970..4f3ddd3  master -> master
 Branch 'master' set up to track remote branch 'master' from 'origin'.
 
+*****************************************************
+
+####      if you have made any changes remotely and 
+then locally u are trying to push locally commited files
+ then it will give some error.
+These are some steps to recover errors :
+
+*****************************************************
+  
+MSP@user-HP MINGW64 /c/7.JAVA CODES (master)
+$ git push -u origin master
+To https://github.com/marmiksp/Java.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/marmiksp/Java.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+MSP@user-HP MINGW64 /c/7.JAVA CODES (master)
+$ git push -u origin master
+To https://github.com/marmiksp/Java.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/marmiksp/Java.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+###########    PROBBLEM SOLVED  ############################
+
+MSP@user-HP MINGW64 /c/7.JAVA CODES (master)
+$ git pull --rebase origin master                                                             <----   Very Important step : it is used to pull files from remote to local workspace.
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/marmiksp/Java
+ * branch            master     -> FETCH_HEAD
+   6267e64..9dd8b60  master     -> origin/master
+First, rewinding head to replay your work on top of it...
+Applying: Tp
+
+MSP@user-HP MINGW64 /c/7.JAVA CODES (master)
+$ git push -u origin master
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 2.11 KiB | 720.00 KiB/s, done.
+Total 7 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/marmiksp/Java.git
+   9dd8b60..c7daab9  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+MSP@user-HP MINGW64 /c/7.JAVA CODES (master)
+$
